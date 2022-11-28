@@ -1,23 +1,25 @@
 package br.com.uniescola.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+@Entity
 public class Aluno {
 
 	@Id
 	@GeneratedValue
-	int id;
+	Long id;
 	String nome;
 	String telefone;
 	String endereco;
 	String cpf;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

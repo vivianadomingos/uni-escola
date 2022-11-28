@@ -1,7 +1,9 @@
 package br.com.uniescola.model;
 
 import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
 
+@Entity
 public class DiaAula {
 	
 	@EmbeddedId

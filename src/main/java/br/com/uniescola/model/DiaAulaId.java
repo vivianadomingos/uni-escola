@@ -4,12 +4,14 @@ import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Embeddable;
+import javax.persistence.OneToOne;
 
 @Embeddable
 public class DiaAulaId implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	Date dataAula;
+	@OneToOne
 	Curso curso;
 
 	public Date getDataAula() {
