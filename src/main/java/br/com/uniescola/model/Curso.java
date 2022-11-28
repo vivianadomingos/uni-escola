@@ -9,7 +9,7 @@ public class Curso {
 
 	@Id
 	@GeneratedValue
-	int id;
+	Long id;
 	String nomeCurso;
 	float ChAula;
 	float ChTotal;
@@ -22,11 +22,11 @@ public class Curso {
 	int sex;
 	int sab;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

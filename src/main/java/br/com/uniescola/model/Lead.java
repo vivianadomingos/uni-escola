@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Lead {
 	@Id
 	@GeneratedValue
-	int id;
+	Long id;
 	String nome;
 	String telefone;
 	Date dataCadastro;
@@ -18,11 +18,11 @@ public class Lead {
 	Date dataNovoEncontro;
 	String observacao;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
