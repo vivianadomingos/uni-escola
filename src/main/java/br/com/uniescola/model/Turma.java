@@ -13,7 +13,7 @@ public class Turma {
 
 	@Id
 	@GeneratedValue
-	int id;
+	Long id;
 	@OneToMany
 	List<Aluno> alunos;
 	@OneToOne
@@ -22,11 +22,11 @@ public class Turma {
 	Professor professor;
 	float valor;
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
