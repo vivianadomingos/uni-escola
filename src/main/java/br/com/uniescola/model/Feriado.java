@@ -3,14 +3,15 @@ package br.com.uniescola.model;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Feriado {
 	
 	@Id
-	@GeneratedValue
+	@Temporal(TemporalType.DATE)
 	Date dataFeriado;
 	int descricao;
 

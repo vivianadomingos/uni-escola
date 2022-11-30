@@ -39,7 +39,7 @@ public class AlunoController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-    public void deleteAluno(@PathVariable("id") Long id) {
+    public void deleteAluno(@PathVariable("id") Integer id) {
     	alunoService.deleteAluno(id);
     }
     

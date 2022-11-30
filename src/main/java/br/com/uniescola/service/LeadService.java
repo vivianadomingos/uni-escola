@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.uniescola.model.Feriado;
 import br.com.uniescola.model.Lead;
-import br.com.uniescola.model.Turma;
 import br.com.uniescola.repository.LeadRepository;
 
 @Service
@@ -31,6 +31,11 @@ public class LeadService {
 
 	public void deleteLead(Long id) {
 		leadRepository.deleteById(id);
+	}
+
+	public Feriado novoFeriado(Feriado feriado) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
