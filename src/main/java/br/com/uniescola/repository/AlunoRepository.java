@@ -4,6 +4,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import br.com.uniescola.model.Aluno;
 
-public interface AlunoRepository extends CrudRepository<Aluno, Integer> {
+public interface AlunoRepository extends CrudRepository<Aluno, Long> {
 
 }

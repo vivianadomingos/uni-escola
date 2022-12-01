@@ -34,7 +34,7 @@ public class AlunoService {
 		}
 	}
 
-	public void deleteAluno(Integer id) {
+	public void deleteAluno(Long id) {
 		alunoRepository.deleteById(id);
 	}
 }
